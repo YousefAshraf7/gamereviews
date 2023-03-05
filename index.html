@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Games</title>
+  </head>
+  <body>
+    <section class="games d-block">
+      <!-- Header -->
+      <header>
+        <img src="images/wraper.png" class="w-100" alt="bg-image" />
+      </header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <img src="images/logo-sm.png" alt="logo" />
+          <a class="navbar-brand text-white ms-2" href="#">GAME REVIEWS</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">PERMADEATH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">SUPERHERO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Games -->
+      <div class="games-cards mt-4">
+        <div class="container">
+          <div class="row gy-4 gx-3" id="allGames">
+            <!-- ...... -->
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-secondary mx-auto d-none" id="showMore">
+            Showmore
+          </button>
+        </div>
+      </div>
+    </section>
+<!-- Loading Screen -->
+    <section class="loading-screen vw-100 vh-100 d-flex justify-content-center align-items-center d-none"id="loadingScreen">
+      <span class="loader"></span>
+    </section>
+<!-- game details section -->
+    <section class="details d-none">
+      <header>
+        <div class="container d-flex justify-content-between py-5 px-2">
+          <h1>Details Game</h1>
+          <i class="fa-solid fa-xmark fs-3 pt-2" id="exit"></i>
+        </div>
+      </header>
+      <div class="game-details">
+        <div class="container">
+          <div class="row" id="showDetails"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

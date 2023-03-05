@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "static";
+  src: url(../static/Comfortaa-Bold.ttf);
+  src: url(../static/Comfortaa-Light.ttf);
+  src: url(../static/Comfortaa-Medium.ttf);
+  src: url(../static/Comfortaa-Regular.ttf);
+  src: url(../static/Comfortaa-SemiBold.ttf);
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+      border-radius: 9px;
+      background: #444449;
+  }
+  ::-webkit-scrollbar-thumb {
+      height: 6px!important;
+    background: #1e1f20;
+    border-radius: 9px;
+  }
+  :root {
+      --main-color: #272b30;
+      --secondary-color: #3a497b;
+      --maintext-color: #fff;
+      --secondarytext-color: #09c;
+    }
+    body {
+        background-color: var(--main-color);
+        color: var(--maintext-color);
+        font-family: static;
+    }
+    /* Header Start */
+    header {
+        max-height: 30vh;
+    }
+    header img {
+        max-height: 30vh;
+  object-fit: cover;
+}
+/* Header End */
+/* Navbar */
+nav .container {
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: sticky !important;
+    margin-inline: auto;
+    margin-top: -35px;
+}
+nav .container img {
+    max-width: 40px;
+}
+nav .container .navbar-nav .nav-item .nav-link {
+    transition: color 1s;
+    font-size: 14px;
+}
+nav .container .navbar-nav .nav-item .active,
+nav .container .navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondarytext-color) !important ;
+}
+/* Nav End */
+/* cards */
+
+.games-cards .game-card .card-desc:hover {
+    filter: grayscale(0);
+    transform: scale(1.1)
+}
+.games-cards .game-card .card-desc {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    border: 0.7px solid #222427;
+    border-radius: 10px;
+
+}
+.games-cards .game-card .pointer{
+    cursor: pointer;
+}
+.games-cards .game-card .card-img {
+    margin-bottom: 10px;
+}
+.games-cards .game-card .card-img img {
+    border-radius: 5px;
+}
+
+.games-cards .game-card .card-content span {
+    background-color: var(--secondary-color);
+    padding: 2px 6px;
+  border-radius: 5px;
+}
+.games-cards .game-card .card-content h2 {
+    padding: 2px 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+.games-cards .game-card p {
+    color: #8a8c8f;
+    font-size: 14px;
+    height: 100px;
+    overflow: hidden;
+}
+.games-cards .game-card footer span {
+    background-color: #32383e;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 11px;
+    padding: 0 6px;
+}
+/* loading Section */
+#loadingScreen{
+    position: absolute;
+}
+.loader {
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height:90px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+/* details Section */
+.details{
+    background-color: #272729be ;
+    min-height: 100vh;
+}
+.details header h1{
+    font-size: 30px;
+}
+.details header i{
+    color: #8a8c8f;
+    cursor: pointer;
+}
+.details .game-details .content span{
+    background-color: var(--secondarytext-color);
+    font-size: 12px;
+    color: black;
+    padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+.details .game-details .content .game-name{
+    background-color: transparent;
+}
+.details .game-details .content a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+.details .game-details .content a:hover{
+    background-color: #ffc107;
+}
+.details .game-details .content p{
+    font-size: 14px;
+}
+/* */
